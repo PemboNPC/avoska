@@ -1,0 +1,353 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    width: 97%;
+    z-index: 10;
+
+}
+
+.logo-top {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.popular-items {
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+    display: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.account img {
+    cursor: pointer;
+    width: 35px;
+    margin-left: 17px;
+}
+
+.mT {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+    background: url('img/back.png') no-repeat center center ;
+    background-size: 85%;
+    margin-top: 80px; 
+}
+
+
+.main-logo {
+    font-size: 130px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+.tagline {
+    font-size: 20px;
+    margin-top: 2px;
+    color: white;
+    font-weight: 200;
+}
+
+.catalog {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.catalog-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.boxFor {
+    background: #333333;
+    padding: 20px;
+    border-radius: 30px;
+    width: 800px;
+    margin-left: 27%;
+
+}
+
+.product {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin: 10px 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.product button {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex; /* Включаем Flexbox */
+    align-items: center; /* Выравниваем элементы по вертикали */
+    justify-content: space-between; /* Размещаем элементы с равным расстоянием */
+    background: #111;
+    padding: 20px;
+    margin-top: 50px;
+    color: white; /* Общий цвет текста для всех элементов внутри */
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.adminPanel {
+    font-size: 14px;
+}
+
+/* Общие стили для popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+.popup-content form input,
+.popup-content form button {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.popup-content form button {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.popup-content .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+.adminPanel {
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+/* Стили для таблицы заказов */
+#adminOrders table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#adminOrders th,
+#adminOrders td {
+    border: 1px solid #444;
+    padding: 8px;
+    text-align: center;
+    color: white;
+}
+
+#adminOrders th {
+    background-color: #333;
+    font-weight: bold;
+}
+#userOrders table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+#userOrders th, 
+#userOrders td {
+    border: 1px solid #444;
+    padding: 8px;
+    text-align: center;
+    color: white;
+}
+
+#userOrders th {
+    background-color: #333;
+    font-weight: bold;
+}
+
+#newOrderForm {
+    margin-top: 20px;
+}
+
+#newOrderForm select,
+#newOrderForm input,
+#newOrderForm button {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#newOrderForm button {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Стили для формы заказа */
+#orderForm input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#orderForm button {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.product button {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Стили для формы заказа */
+#orderForm input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#orderForm button {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.popupq {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-contentq {
+    background: #222;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.close-btnq {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
